@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sir.dbms_mini">
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_inven_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_inven_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DBMS_mini">
+        <activity
+            android:name=".ExtraActivities.About"
+            android:exported="true" />
+        <activity
+            android:name=".ExtraActivities.ContactEmail"
+            android:exported="true" />
+        <activity
+            android:name=".SQLProduct.AddExportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SQLProduct.ViewSQLDataExportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SQLProduct.AddSQLActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FirebaseProduct.ScanProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FirebaseProduct.UpdateProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FirebaseProduct.ViewProductActivity"
+            android:exported="true" />
+        <activity android:name=".Profile.EditProfileActivity" />
+        <activity android:name=".FirebaseProduct.AddProductActivity" />
+        <activity android:name=".Profile.ProfileActivity" />
+        <activity android:name=".Search.SearchActivity" />
+        <activity android:name=".ExtraActivities.IntroPage" />
+        <activity android:name=".HomePage.HomePageActivity" />
+        <activity android:name=".ExtraActivities.LogoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.RegisterActivity" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".Utils.Capture"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage.HomePageActivity"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    android:background="@drawable/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="1000dp"
+        android:layout_alignParentBottom="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white">
+
+        <Button
+            android:id="@+id/btn_check_inven"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_bg"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center_vertical"
+            android:text="Check Product"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:backgroundTint="#FFFF00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.12"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/btn_add_inven"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/btn_check_inven"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_bg"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center_vertical"
+            android:text="Import Product"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:backgroundTint="#FFFF00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_check_inven"
+            app:layout_constraintTop_toBottomOf="@+id/btn_check_inven"
+            app:layout_constraintVertical_bias="0.125"
+            tools:ignore="RtlCompat" />
+
+
+        <Button
+            android:id="@+id/btn_export_inven"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/btn_check_inven"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_bg"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center_vertical"
+            android:text="Export Product"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:backgroundTint="#FFFF00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_add_inven"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_inven"
+            app:layout_constraintVertical_bias="0.181"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/btn_add_scan_inven"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/btn_check_inven"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_bg"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:gravity="center_vertical"
+            android:text="Scan QR Code"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:backgroundTint="#FFFF00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_export_inven"
+            app:layout_constraintTop_toBottomOf="@+id/btn_export_inven"
+            app:layout_constraintVertical_bias="0.181"
+            tools:ignore="RtlCompat" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            app:itemIconTint="@color/black"
+            app:itemRippleColor="@color/black"
+            app:itemTextColor="@color/black"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:menu="@menu/bottom_navigation_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationMenu"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black"
+        app:itemRippleColor="@color/black"
+        app:menu="@menu/navi_menu"
+        app:headerLayout="@layout/layout_nav_header"
+        android:layout_gravity="start"
+        app:labelVisibilityMode="labeled"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "663404121557",
+    "project_id": "dbms-mini-project-ef69b",
+    "storage_bucket": "dbms-mini-project-ef69b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663404121557:android:5f4c298a72a3165951415c",
+        "android_client_info": {
+          "package_name": "com.sir.dbms_mini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663404121557-62ahpvh3kf6gbebr4lvjrgc01pel6fkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaaQFyB4X5RZVbSdZb7JHfbqSXqe7_f5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663404121557-62ahpvh3kf6gbebr4lvjrgc01pel6fkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

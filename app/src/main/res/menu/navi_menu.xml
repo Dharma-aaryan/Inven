@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navMenu_import"
+        android:icon="@drawable/ic_import"
+        android:title="New Import Order"/>
+
+    <item android:id="@+id/navMenu_view_import"
+        android:icon="@drawable/ic_inventory"
+        android:title="View Inventory"/>
+
+    <item android:id="@+id/navMenu_export"
+        android:icon="@drawable/ic_export"
+        android:title="New Export Order"/>
+
+    <item android:id="@+id/navMenu_view_export"
+        android:icon="@drawable/ic_preview"
+        android:title="View Order"/>
+
+    <item android:id="@+id/navMenu_scan"
+        android:icon="@drawable/ic_camera"
+        android:title="Scan "/>
+
+    <item android:id="@+id/navMenu_aboutus"
+        android:icon="@drawable/ic_chat"
+        android:title="About Us"/>
+
+    <item android:id="@+id/navMenu_email"
+        android:icon="@drawable/ic_email"
+        android:title="Contact Us"/>
+
+    <item android:id="@+id/navMenu_profile"
+        android:icon="@drawable/ic_person"
+        android:title="Profile Details">
+    </item>
+
+    <item android:id="@+id/navMenu_signout"
+        android:icon="@drawable/ic_signout"
+        android:title="Sign-Out">
+    </item>
+
+</menu>
